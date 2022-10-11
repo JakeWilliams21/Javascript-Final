@@ -40,6 +40,12 @@
     width: 480px;
 }
 
+.searchbar :hover {
+    border: solid;
+    border-color: white;
+    background-color: #1A1A1B;
+}
+
 .searchbar input {
     background-color: #2e2e30;
     border: none;
@@ -59,6 +65,10 @@
     background-color: transparent;
     color: white;
     border: none;
+}
+
+.icon :hover {
+    background-color: #2e2e30;
 }
 
 .advertise {
