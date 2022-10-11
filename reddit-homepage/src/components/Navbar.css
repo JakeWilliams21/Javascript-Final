@@ -1,0 +1,135 @@
+.navbar-parent {
+    display: flex;
+    background-color: #1A1A1B;
+    padding: 2px 8px;
+    border-color: rgb(85, 85, 85);
+    align-items: center;
+    gap: 16px;
+    justify-content: space-evenly;
+}
+
+.logo img {
+    height: 50px;
+    width: 100px;
+}
+
+.subreddits {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 240px;
+}
+
+.subreddits-dropdown {
+    background-color: #1A1A1B;
+    border: none;
+    color: white;
+    height: 80%;
+    width: 100%;
+}
+
+.subreddits-dropdown :hover {
+    border: solid;
+    border-color: rgb(53, 53, 53);
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 480px;
+}
+
+.searchbar input {
+    background-color: #2e2e30;
+    border: none;
+    border-radius: 24px;
+    height: 80%;
+    width: 100%;
+    padding: 4px 16px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.advertise {
+    color: white;
+    background-color: #2e2e30;
+    border: none;
+    border-radius: 24px;
+    height: 32px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.vertical-line {
+    width: 1px;
+    background-color: #2e2e30;
+    height: 32px;
+}
+
+.profile-dropdown {
+    justify-content: space-between;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    width: 240px;
+    height: 40px;
+    border: solid;
+    border-color: #2e2e30;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: smaller;
+}
+
+.profile-dropdown-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.user-info img {
+    max-height: 8px;
+    background-color: transparent;
+}
+
+.user-info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: darkgray;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    background-color: #2e2e30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    color: #2e2e30;
+}
