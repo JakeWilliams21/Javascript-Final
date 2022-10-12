@@ -10,6 +10,19 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const Navbar = () => {
     const [karma, setKarma] = useState(0)
+    const [drop, setDrop] = useState(false)
+    const dropDownButton = document.querySelector('.profile-dropdown-menu')
+
+    const handleClick = () => {
+        if(drop) {
+            setDrop(false)
+            dropDownButton.classList.add('hidden')
+        } else {
+            setDrop(true)
+            dropDownButton.classList.remove('hidden')
+        }
+    }
+
     return (
         <div className = 'navbar-parent'>
             <div className = 'logo'>
@@ -34,18 +47,46 @@ const Navbar = () => {
                 <button className = 'icon post'><AddIcon/></button>
                 <button className = 'advertise'>Advertise</button>
             </div>
-            <div className = 'profile-dropdown'>
+            <div className = 'profile-dropdown' id="menu" onClick = {handleClick}>
                 <div className = 'profile-dropdown-left'>
                 <div className = 'profile-picture'><img src=""/></div>
                 <div className = 'user-info'>
                     <span>username</span>
                     <div>
-                        <img src = 'https://toppng.com/uploads/preview/flower-orange-transparent-11546686986eesoo81trq.png'/>
+                        <img src = 'https://toppng.com/uploads/preview/flower-orange-transparent-11546686986eesoo81trq.png' alt = 'karma'/>
                         <span>{karma} karma</span>
                     </div>
                 </div>
                 </div>
                 <ArrowDropDownIcon className = 'arrow' />
+            </div>
+            <div className = 'profile-dropdown-menu hidden'>
+                <div className = 'my-stuff'>
+                    <span>My Stuff</span>
+                    <div>
+                        <div>Online Status</div>
+                        <div>Profile</div>
+                        <div>Style Avatar</div>
+                        <div>User Settings</div>
+                    </div>
+                </div>
+                <hr/>
+                <div className = 'view-options'>
+                    <span>View Options</span>
+                    <div>Dark Mode</div>
+                </div>
+                <hr/>
+                <div className = 'info-section'>
+                    <div>Create A Community</div>
+                    <div>Advertise on Reddit</div>
+                    <div>Coins</div>
+                    <div>Talk</div>
+                    <div>Explore</div>
+                    <div>Help Center</div>
+                    <div>More</div>
+                    <div>Terms and Policies</div>
+                </div>
+                <hr/>
             </div>
         </div>
     )
